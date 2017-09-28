@@ -1,0 +1,23 @@
+<ion-header>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-label padding style="font-size: 20px" class="fontdefaultcolor">东莞麻将代理</ion-label>
+    <ion-item>
+      <ion-label floating style="color: rgb(234,86,72)"><ion-icon style="margin-right:10px;" name="md-person" clearInput></ion-icon>账号:</ion-label>
+      <ion-input type="text" [(ngModel)]="username" (input)="btnAddColor()"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating  style="color: rgb(234,86,72)"><ion-icon style="margin-right:10px;" name="md-unlock" clearInput></ion-icon>密码:</ion-label>
+      <ion-input type="password" [(ngModel)]="password"  (input)="btnAddColor()"></ion-input>
+    </ion-item>
+
+    <div padding style="padding-top:80px">
+      <button ion-button color="primary" block (click)="login()" [(disabled)]="btndisable" >立即登录</button>
+      <p class="fontdefaultcolor" (click)="useragreement()" style="font-size: 12px;padding-top: 10px">进入麻将代理表示你已同意《麻代理用户协议》</p>
+    </div>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,44 @@
+
+<ion-header>
+  <ion-navbar color="primary" no-border-bottom>
+    <ion-title>
+      我的玩家
+      <ion-icon name="md-add" style="font-size:1.4em" class="f-add" (click)="showMenu()"></ion-icon>   
+    </ion-title>
+  </ion-navbar>
+   <div class="add-angle" id="add-angle"></div>
+   <div class="add-menu" id="add-menu">
+      <span style="border-bottom: 1px solid #ccc" (click)="addgamer()">添加玩家</span>
+      <span (click)="bindgamer()">绑定玩家</span>
+  </div> 
+
+</ion-header>
+
+<ion-content>
+  <ion-searchbar placeholder="这里输入玩家信息" (ionInput)="getItems($event)" fixed></ion-searchbar>
+
+  
+  <ion-list >
+    <ion-item-sliding  *ngFor="let item of gamerList">
+      <ion-item  #sliditem  (click)="lookUpGamer(item)">
+        <ion-avatar item-start>
+          <img src="">
+        </ion-avatar>
+        <span>{{item.nickname}}</span>
+        <p>id：{{item.gamer_id}}</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button (click)="freeafter(item)" color="fblue" icon-start>
+          <ion-icon name="medical" ></ion-icon>
+          {{ item.forbidden | filterPipe}}
+        </button>
+      </ion-item-options>
+
+    </ion-item-sliding>
+    <p *ngIf="length == 0" style="text-align: center">
+      暂时没有数据！
+    </p>
+  </ion-list>
+  <div class="gide" id="gide" (click) = "hideMenu()"></div>
+
+</ion-content>

@@ -1,0 +1,29 @@
+<!--
+  Generated template for the MySetPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary" no-border-bottom>
+    <ion-title>设置</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   <button ion-item  (click)="helpSelected()" class="button-bottomLine">
+    <i class="iconfont icon-bangzhu" style="padding-right: 10px;font-size: 1.5em;color:#FFB415"></i>帮助与反馈
+  </button>
+  <!-- <button ion-item (click)="aboutSelected()" class="button-bottomLine">
+    <i class="iconfont icon-guanyuhebangzhu" style="padding-right: 10px;font-size: 1.5em;color:#FFB415"></i>关于
+  </button> -->
+   <button ion-item (click)="updatemypassword()" class="button-bottomLine">
+    <i class="iconfont icon-mimaxiugai" style="padding-right: 10px;font-size: 1.5em;color:#FFB415"></i>密码修改
+  </button>
+  <div padding style="padding-top:80px">
+    <button ion-button color="primary" block (click)="SignOut()">退出登录</button>
+  </div>
+</ion-content>

@@ -1,0 +1,42 @@
+
+<ion-header>
+
+  <ion-navbar color="primary" no-border-bottom>
+    <ion-title>添加玩家</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+      <ion-label fixed >玩家ID</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="new_gamer_id">{{new_gamer_id}}</ion-input>
+    </ion-item>
+     <ion-item>
+      <ion-label fixed >昵称</ion-label>
+      <ion-input type="text" [(ngModel)]="nickname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed >密码</ion-label>
+      <ion-input type="password" [(ngModel)]="pswd"></ion-input>
+    </ion-item>
+      <button ion-item class="wrap_btn" (click)="doPrompt()">  
+        <span class="f-listName">额度</span>
+        <button ion-button small class="f-reserve" style="float: right">调整</button>
+        <span class="f-num" style="margin-right: 10px">{{ limit_num }}</span>
+      </button>   
+   <ion-list-header>
+      <p style="font-size: 1.4em;float: left">抽水比</p>
+      <ion-badge  color="danger" style="font-size: 1.2em;line-height: 1.3em;float: right;margin-right:32px">{{tax_rate | precentfilter}}</ion-badge>
+    </ion-list-header>
+    <ion-item>
+      <ion-range min="0" max="100" step="1" snaps="false" [(ngModel)]="tax_rate" color="danger">
+         <ion-label range-left>0</ion-label>
+         <ion-label range-right>100</ion-label>
+      </ion-range>
+    </ion-item>
+  <div padding style="padding-top:80px">
+    <button ion-button color="primary" block (click)="addGamer()">添加</button>
+  </div>
+</ion-content>

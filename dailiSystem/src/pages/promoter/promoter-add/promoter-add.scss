@@ -1,0 +1,12 @@
+page-promoter-add {
+    .item-ios.item-block .item-inner{border-bottom: none}
+    .item-input ion-input, .item-input ion-textarea{border: 1px solid #a7a7a7;height: 40px}
+    .range-ios-secondary .range-bar-active, .range-ios-secondary .range-tick-active{background-color:#ffa700; }
+    ion-label[fixed] {-webkit-box-flex: 0; -webkit-flex: 0 0 80px;-ms-flex: 0 0 80px;flex: 0 0 80px;width: 80px;min-width: 80px;max-width: 200px;}
+    .myImg{width: 100px;height: 100px;display: inline;margin-top: 20px}
+    .f-card-header{text-align: center;}
+    .f-myName{margin-bottom: 20px;font-size: 1.8rem;}
+    .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner{background-image: url(" ");}
+    .f-num{float: right;line-height: 35px}
+    ion-input{border-radius:5px;}
+}

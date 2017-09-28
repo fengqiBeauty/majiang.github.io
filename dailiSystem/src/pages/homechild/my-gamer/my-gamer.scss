@@ -1,0 +1,23 @@
+page-my-gamer {
+  .f-add{position: absolute;top:15px;right:15px;}
+    ion-fab[top][edge] {
+      top: -48px;
+    }
+    ion-fab[right] {
+      right: 0;
+    }
+  .popover-arrow{left: 285.094px !important;}
+  .fab{border-radius: 0}
+  
+   ion-searchbar {position: fixed;z-index: 10;}
+  .searchbar-ios {background:#ccc;}
+  .list-ios {margin: 40px 0 32px;}
+  /* Èý½ÇÐÎ */
+  .add-angle{width: 0;height: 0;border-left: 8px solid transparent;border-right: 8px solid transparent;border-bottom: 10px solid #fff;
+    z-index: 10000; position: absolute;bottom:0;right:15px;display: none;}
+  .add-menu{width: 120px;height:100px;background-color: #fff;position: absolute;top:50px;right:5px;z-index: 100;border-radius: 5px;display: none;font-size: 1.20em}
+  
+  
+  .add-menu span{display: inline-block;width: 100%;height: 50px;line-height: 50px;text-align: center;}
+  .gide{width: 100%;height: 100%;background-color: rgba(0,0,0,0.1);position: fixed;top:0;bottom:0;display: none;}
+}

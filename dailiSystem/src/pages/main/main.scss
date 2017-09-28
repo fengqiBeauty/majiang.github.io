@@ -1,0 +1,46 @@
+page-main {
+
+    ion-icon{
+        font-size: 1.4em;
+        transition:font-size 0.25s;
+	    -webkit-transition:font-size 0.25s;       
+    }
+    ion-icon:active{
+         font-size: 1.7em;
+    }
+    .mainicon{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        color: white;
+    }  
+    .prom_add{
+        background:rgb(255, 152, 0);
+        transition:background 0.25s;
+	    -webkit-transition:font-background 0.25s;       
+    }
+    .prom_add:active{
+        background: rgb(208, 134, 3)
+    }
+    .gam_add{
+        background: rgb(15, 136, 235);
+        transition:background 0.25s;
+	    -webkit-transition:font-background 0.25s;       
+    }
+    .gam_add:active{
+        background: rgb(17, 107, 182)
+    }
+    .pro_add{
+        background: rgb(139, 195, 74);
+         transition:background 0.25s;
+	    -webkit-transition:font-background 0.25s;       
+    }
+    .pro_add:active{
+        background:rgb(122, 172, 66)
+    }
+    i::before {
+        display: inline-block;
+    }
+    .f-css{display:inline-block;font-size: 2.5rem;color:#fff;width: 55px;height: 55px;border-radius: 50%;line-height: 55px;}
+}

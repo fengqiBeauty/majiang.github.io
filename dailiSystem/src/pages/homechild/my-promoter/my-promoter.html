@@ -1,0 +1,34 @@
+<!--
+  Generated template for the MyPromoterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary" no-border-bottom>
+    <ion-title>我的代理
+    <ion-icon name="md-add" style="font-size:1.4em" class="f-add" (click)="addPromoter()"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content>
+  <ion-searchbar placeholder="这里输入代理信息" (ionInput)="getItems($event)" fixed></ion-searchbar>
+  <ion-list >
+    <ion-item-sliding *ngFor="let item of promoterList" >
+      <ion-item (click)="lookUpPromoter(item)">
+        <ion-avatar item-start>
+          <img src="">
+        </ion-avatar>
+        <span>{{item.nickname}}</span>
+        <p>额度：{{item.limit_num}}</p>
+      </ion-item>
+    </ion-item-sliding>
+    <p *ngIf="length == 0" style="text-align: center">
+      暂时没有数据！
+    </p>
+  </ion-list>
+</ion-content>
